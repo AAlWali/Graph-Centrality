@@ -35,13 +35,13 @@ int main()
 
 
 /*
-    addEdge(degree_sum, adj, 0, 1, 10); // 0 made path with 2 and weight 10
-    addEdge(degree_sum, adj, 0, 4, 20);
-    addEdge(degree_sum, adj, 1, 2, 30);
-    addEdge(degree_sum, adj, 1, 3, 40);
-    addEdge(degree_sum, adj, 1, 4, 50);
-    addEdge(degree_sum, adj, 2, 3, 60);
-    addEdge(degree_sum, adj, 3, 4, 70);
+    addEdge( adj, 0, 1, 10); // 0 made path with 2 and weight 10
+    addEdge( adj, 0, 4, 20);
+    addEdge( adj, 1, 2, 30);
+    addEdge( adj, 1, 3, 40);
+    addEdge( adj, 1, 4, 50);
+    addEdge( adj, 2, 3, 60);
+    addEdge( adj, 3, 4, 70);
 */
     return 0;
 }
