@@ -10,7 +10,7 @@ des=[]
 wt=[]
 nums = []
 node_sizes=[]
-with open('input.txt', 'rt') as myfile:  # Open file lorem.txt for reading text
+with open('input.txt', 'rt') as myfile:  # Open file input.txt for reading text
     for line in myfile:                   # For each line of text,
         mylines.append(line.rstrip('\n')) # add that line to the list.
     for i in range(len(mylines)):
