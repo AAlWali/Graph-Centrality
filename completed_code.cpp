@@ -208,13 +208,13 @@ void Betweenness_Centrality()
 				num = 0;
 				rec_func(dess, i, &size, &num, input, 0);
 
-				if (size == 0)
+				if (size == 0)//avoid div by zero
 					output = 0;
 				else
 					output += num / size;
 
 
-				c_of = output;
+				c_of = output;// c of input from j to i  
 			}
 		}
 
@@ -250,9 +250,9 @@ void Betweenness_Centrality()
 
 
 
-		while ((!nodes_q.empty()) && (cur_p.first == top.first) && (cur_p.second.first == top.second.first))//you have the same shortest distances and yous are in the same node
+		while ((!nodes_q.empty()) && (cur_p.first == top.first) && (cur_p.second.first == top.second.first))//you have the same dis and yous are in the same node
 		{
-			if (d[cur_p.second.first] > cur_p.first)
+			if (d[cur_p.second.first] > cur_p.first)// push only if i have dis smaller than dis in d 
 			{
 				p[cur_p.second.first].push_back(nodes_q.top().second.second); // push parents
 			}
@@ -307,7 +307,7 @@ void rec_func(vector<list<int> >dess, int node, double *size, double *num, int i
 	{
 		if (*iterator == input)
 		{
-			if (dess[*iterator].size() == 0)
+			if (dess[*iterator].size() == 0) // if the list is empty (there is no in between nodes ) so it is direct path 
 				*(num) += 1;
 			else
 			    *(num) += dess[*iterator].size();
