@@ -47,7 +47,7 @@ int main()
 		}
 		else
 		{
-			cout << "Please Enter Number: 1 -> 3\n\n>>";
+			cout << "Please Enter Number: 1 -> 4\n\n>>";
 		}
 
 	}
