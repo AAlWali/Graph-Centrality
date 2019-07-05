@@ -32,3 +32,12 @@ we have text file as input which has number of nodes and edges and each node con
 
 - file sysytem mangement
 
+## Who maintains and contributes to the project
+
+- عبدالله شاكر عبدالرحمن 
+
+- عبدالله خيري اسماعيل 
+
+- عبدالرحمن ممدوح خليل 
+
+
